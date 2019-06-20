@@ -16,7 +16,7 @@ program
     .description('Generate a new project')
     .alias('i')
     .action(() => {
-        require('init')()
+        require('./init.js')()
     })
-    
+
 program.parse(process.argv)
