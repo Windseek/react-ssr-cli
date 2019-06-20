@@ -18,3 +18,5 @@ program
     .action(() => {
         require('init')()
     })
+    
+program.parse(process.argv)
