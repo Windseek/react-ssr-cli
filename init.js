@@ -9,10 +9,11 @@ module.exports = () => {
  co(function *() {
     // 处理用户输入
       let tplName = yield prompt('Template name: ')
-      let projectName = yield prompt('Project name: ')
+      let projectName = yield prompt('Project name: you can input one like react, vue, angular')
       let gitUrl,branch;
+      console.log(config.tpl);
     if (!config.tpl[tplName]) {
-        console.log(chalk.red('\n × Template does not exit!'))
+        console.log(chalk.red('\n × Template does not support!'))
         process.exit()
     }
     gitUrl = config.tpl[tplName].url
