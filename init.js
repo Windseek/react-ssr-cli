@@ -6,7 +6,7 @@ const config = require('./template.json')
 const chalk = require('chalk')
 
 module.exports = () => {
- co(function *() {
+ co(function *() { 
     // 处理用户输入
       let tplName = yield prompt('Template name: ')
       let projectName = yield prompt('Project name: you can input one like react, vue, angular')
